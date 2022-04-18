@@ -14,17 +14,20 @@ params:
   tagsLimit: 20
   darkmode: dark
   widgets:
-    archives: true
-    categories: true
-    tags: true
-    recentposts: true
-    search: true
+    display: true
+    widgets:
+      - search
+      - recent
+      - project
+      - category
+      - tags
+      - archive
   post:
     thumbnail: true
     thumbnail_height: h-44
     thumbnail_width: w-auto
     description: 120
-    noimage: true
+    noimage: false
 
 # Will give values to .Lastmod etc.
 enableGitInfo: true
@@ -35,6 +38,7 @@ taxonomies:
   tag: tags
   archive: archives
   series: series
+  project: projects
 
 
 

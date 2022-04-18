@@ -1,7 +1,7 @@
 ---
 title: '"Hello World" | Set-Content blog'
 description: My first post.  Validating all the components are working.
-image: img/posts/hello-world-post-icon.png
+image: img/post/hello-world-post-icon.png
 date: 2022-02-22
 draft: false
 tags:
