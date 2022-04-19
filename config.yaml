@@ -17,9 +17,9 @@ params:
     display: true
     widgets:
       - search
-      - recent
-      - project
-      - category
+#      - recent
+#      - project
+#      - category
       - tags
       - archive
   post:
@@ -28,6 +28,10 @@ params:
     thumbnail_width: w-auto
     description: 120
     noimage: false
+    widgets:
+      display: true
+      widgets:
+#        - search
 
 # Will give values to .Lastmod etc.
 enableGitInfo: true
@@ -43,7 +47,7 @@ taxonomies:
 
 
 theme:
-  - Blonde
+  - blonde
 
 
 # Highlighting config
