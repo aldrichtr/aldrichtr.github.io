@@ -8,7 +8,7 @@ categories:
 projects:
 - infraspective
 series:
-- "infrastructure testing modules"
+- "Infrastructure testing: Introducing infraspective"
 tags:
 - powershell
 - pester
