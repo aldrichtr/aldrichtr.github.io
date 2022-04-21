@@ -7,15 +7,11 @@ categories:
 - Development
 projects:
 - infraspective
-series:
-- "Infrastructure testing: Introducing infraspective"
+series: "Infrastructure testing: Introducing infraspective"
 tags:
 - powershell
 - pester
 ---
-
-## Infrastructure testing
-This is part 1 in a series on "Infrastructure testing modules"
 
 ## What is "Infrastructure Testing"
 

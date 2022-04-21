@@ -9,8 +9,7 @@ categories:
 - Development
 projects:
 - infraspective
-series:
-- "Infrastructure testing: Introducing infraspective"
+series: "Infrastructure testing: Introducing infraspective"
 ---
 
 ## Infrastructure testing
