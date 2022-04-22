@@ -7,9 +7,12 @@ module.exports = {
         warmgray: {
           700: "#2f3335",
           800: "#1e2022",
-          900: "#181a1b",
+          900: "#3d2c26",
         },
       },
+      fontFamily: {
+        'sans': ['"Ubuntu Mono"', "monospace"]
+      }
     },
   },
   variants: {},
