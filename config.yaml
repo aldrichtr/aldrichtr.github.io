@@ -8,8 +8,17 @@ title: Tim Aldrich
 build:
   writeStats: true
 
+# Will give values to .Lastmod etc.
+enableGitInfo: true
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 2
+    ordered: true
 
 params:
+  favicon: "favicon.ico"
   paginator_pages: 5
   tagsLimit: 20
   darkmode: dark
@@ -31,10 +40,9 @@ params:
     widgets:
       display: true
       widgets:
-#        - search
-
-# Will give values to .Lastmod etc.
-enableGitInfo: true
+        - post_img
+        - search
+        - toc
 
 
 taxonomies:

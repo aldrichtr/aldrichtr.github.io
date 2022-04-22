@@ -18,23 +18,32 @@
     {{ end }}
     {{ if or ($.Scratch.Get "next_link") ($.Scratch.Get "prev_link") }}
         <hr/>
-        <p>Part {{ $.Scratch.Get "cur_page_num" }} of {{ $.Scratch.Get "total_page_num" }}
-            in the <b>{{ .Params.series }}</b> series.</p>
+        <p>This post is part {{ $.Scratch.Get "cur_page_num" }} of {{ $.Scratch.Get "total_page_num" }}
+            in the <b>{{ .Params.series }}</b> series.
+        </p>
+
         <p>
-        {{ if $.Scratch.Get "prev_link" }}
-            {{ if ne ($.Scratch.Get "prev_link") ($.Scratch.Get "first_link") }}
-                <a href="{{ $.Scratch.Get "first_link" }}"><i class="fa fa-angle-left"></i>Series Start<i class="fa fa-angle-right"></i></a>
-                    |
-            {{ end }}
             {{ if $.Scratch.Get "prev_link" }}
-                <a href="{{ $.Scratch.Get "prev_link" }}"><i class="fa fa-angle-double-left"></i>{{ $.Scratch.Get "prev_title" }}</a>
+            {{ if ne ($.Scratch.Get "prev_link") ($.Scratch.Get "first_link") }}
+                <span class="material-icons md-12">first_page</span>
+                <a href="{{ $.Scratch.Get "first_link" }}">Series Start</a> |
+            {{ end }}
+
+            {{ if $.Scratch.Get "prev_link" }}
+                <span class="material-icons md-12">keyboard_arrow_left</span>
+                <a href="{{ $.Scratch.Get "prev_link" }}">{{ $.Scratch.Get "prev_title" }}</a>
             {{ end }}
         {{ end }}
+
         {{ if and ($.Scratch.Get "next_link") ($.Scratch.Get "prev_link") }}
-                |
+            |
         {{ end }}
+
         {{ if $.Scratch.Get "next_link" }}
-            <a href="{{ $.Scratch.Get "next_link" }}">{{ $.Scratch.Get "next_title" }}<i class="fa fa-angle-double-right"></i></a></p>
+            <a href="{{ $.Scratch.Get "next_link" }}">{{ $.Scratch.Get "next_title" }}</a>
+            <span class="material-icons md-12">keyboard_arrow_right</span>
         {{ end }}
+        </p>
+        <hr/>
     {{ end }}
 {{ end }}

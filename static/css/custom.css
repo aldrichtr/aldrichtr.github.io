@@ -1,0 +1,192 @@
+.font-sans {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+/* Rules for sizing the icon. */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+.content li li {
+  margin-left: 0.8em;
+  font-size: 0.9em;
+}
+.content {
+  margin-bottom: 3em;
+}
+.content li {
+  font-size: 1.1em;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.content a {
+  color: #575c34;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+.content p {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin: 3em 0 0.25em;
+}
+.content h1 + h2,
+.content h2 + h3,
+.content h2 + h4,
+.content h3 + h4,
+.content h3 + h5,
+.content h4 + h5,
+.content h4 + h6,
+.content h5 + h6 {
+  margin-top: 1em;
+}
+.content h1 {
+  font-size: 2.25rem;
+}
+.content h2 {
+  padding-top: 0.55em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  background-color: #f6f6f6;
+  border-left: 4px solid #222;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.dark .content h2 {
+  background-color: #1d2021;
+  border-left-color: #81786a;
+}
+.content h3 {
+  font-size: 1.5rem;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid #222;
+  font-weight: 700;
+}
+.dark .content h3 {
+  border-bottom-color: #81786a;
+}
+.content h4 {
+  font-size: 1.25rem;
+}
+.content h5 {
+  font-size: 1.125rem;
+}
+.content h6 {
+  font-size: 1rem;
+}
+.content b {
+  font-style: bold;
+}
+.content blockquote {
+  background-color: #edf2f7;
+  padding: 0.5rem 1rem;
+}
+.dark .content blockquote {
+  background-color: #1f2223;
+}
+.content table {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  table-layout: auto;
+}
+.content th {
+  padding: 0.5rem 1rem;
+  display: table-cell;
+  text-align: -internal-center;
+}
+.content td {
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border: 1px solid #e2e8f0;
+  display: table-cell;
+  text-align: -internal-center;
+}
+.content tr {
+  display: table-row;
+}
+.content thead {
+  display: table-header-group;
+}
+pre {
+  padding: 0.5rem;
+  max-width: 64em;
+  overflow: auto;
+}
+ol {
+  margin-left: 1em;
+  list-style-type: decimal;
+}
+.footnotes {
+  margin-top: 1rem;
+}
+blockquote {
+  margin: 0.8rem 0;
+}
+iframe {
+  margin: 0.8rem 0;
+}
+.s_video_simple {
+  margin: 0.8rem 0;
+}
+table {
+  margin-bottom: 0.8rem;
+}
+.highlight {
+  margin-bottom: 0.8rem;
+}
+
+ul, li {
+  margin-left: 1em;
+  list-style-type: disc;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+}
