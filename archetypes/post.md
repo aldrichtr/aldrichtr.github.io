@@ -3,8 +3,9 @@ title: "{{ replace .Name "-" " " | title }}"
 summary: "Add a summary"
 date: {{ .Date }}
 draft: true
+toc: false
 description: "Add a description"
-img: path/to/img.png
+img: "img/post/default.png"
 categories:
 
 tags:
