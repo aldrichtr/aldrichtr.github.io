@@ -190,3 +190,11 @@ input,
 textarea {
   -webkit-appearance: none;
 }
+
+a {
+  color: #585b48;
+}
+
+#date {
+  color: #969696
+}
