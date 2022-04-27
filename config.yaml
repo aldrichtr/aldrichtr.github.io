@@ -22,6 +22,8 @@ params:
   paginator_pages: 5
   tagsLimit: 20
   darkmode: dark
+  toc:
+    wordcount: 200
   widgets:
     display: true
     widgets:
@@ -55,6 +57,7 @@ taxonomies:
 
 
 theme:
+#  actually, it's my modified version of blonde...
   - blonde
 
 
