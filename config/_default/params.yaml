@@ -1,0 +1,38 @@
+favicon: "favicon.ico"
+
+paginator_pages: 5
+
+tagsLimit: 20
+
+mainSections:
+  - post
+  - about
+  - projects
+
+darkmode: dark
+base_color: "bg-stone-800"
+toc:
+  wordcount: 200
+
+widgets:
+  display: true
+  widgets:
+    - search
+    #      - recent
+    #      - project
+    #      - category
+    - tags
+    - archive
+
+post:
+  thumbnail: true
+  thumbnail_height: "lg:h-32"
+  thumbnail_width: "lg:w-auto"
+  description: 120
+  noimage: false
+  widgets:
+    display: true
+    widgets:
+      - post_img
+      - search
+      - toc
