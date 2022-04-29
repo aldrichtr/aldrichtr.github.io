@@ -1,7 +1,7 @@
 ---
 title: "Auditing Standards and Frameworks"
 description: "Standards and Frameworks for recording and exchanging audit data"
-date: 2022-04-22T15:53:52-04:00
+date: 2022-04-19T15:53:52-04:00
 draft: true
 toc: true
 image: img/post/default.png
@@ -25,40 +25,40 @@ cybersecurity, there are several standards but (in my experience) the two major 
 
 Before I get into the specifics of these two standards, I want to take a minute to define some terms.
 
-**NOTE:** These are *my* definitions, unless explicitly stated otherwise.
+{{<rawhtml>}} <p style="text-align:center"> {{< /rawhtml>}}
+(❗ ***Note:*** These are *my* definitions, unless explicitly stated otherwise.)
+{{<rawhtml>}} </p> {{< /rawhtml>}}
 
-Test
+**Test**
 : A measurement of a configuration item or process.
 
-Control
+**Control**
 : A specific action (countermeasure) taken on a configuration item or process.
 
-Profile
+**Profile**
 : A categorization of `Controls` that achieve a prescribed level of acceptance.
 
-Example
-> Id: L1
-> Name: Level 1
-> Title: "Corporate/Enterprise Environment"
+**Grouping**
+: A logical collection of related `Controls`
 
-Checklist
-: A collection of Controls, logically grouped by the user, group or organization.
+**Checklist**
+: A collection of `Controls`, logically grouped by the user, group or organization.
 
-Benchmark
+**Benchmark**
 : An established collection of controls that define a "measurement milestone"
 
-
-### A "Used Car" analogy 🚗
+To illustrate these terms, a simple analogy...
+## A "Used Car" analogy 🚗
 
 Let's say I want to buy a car from a used-car lot.  I want to ensure the car is going to last and is in good
 working order, but I'm far from an expert in automotive maintenance.  So, I head to the internet and search for
-"Chevrolet certified pre-owned checklist".  That leads me to a [172-Point Checklist][1]
+"Chevrolet pre-owned car".  After a couple of clicks, I find a [172-Point Checklist][1].
 
-![Tires and brakes group](/img/post/chevy-cpo-cl-1.png)
 
-Ok, now that I have the `Checklist`, I can see that one of the `Groupings` is "Check Tires and Brake Pads", and
-there is a minimum tire depth `Control`.  To validate the `Control`, I would measure (that is `Test`) the tire tread
-depth of each tire, if they are >= 5/32nds they pass the `Test`, and if all four pass, then they pass the `Control`.
+Ok, now that I have the `Checklist`, I can see that one of the `Groupings` is "Check Tires and Brake Pads",
+![Tires and brakes group](/img/post/chevy-cpo-cl-1.png) and there is a minimum tire depth `Control`.  To validate
+the `Control`, I would measure (that is `Test`) the tire tread depth of each tire, if they are >= 5/32nds they pass
+the `Test`, and if all four pass, then they pass the `Control`.
 
 
 Notice the "Hybrid Vehicles" section at the end?
@@ -93,6 +93,15 @@ Example
 ### Grouping
 
 A logical collection of related `Controls` to aid in categorizing and organization.
+
+### Profile
+
+
+Example
+> Id: L1
+> Name: Level 1
+> Title: "Corporate/Enterprise Environment"
+
 ### Checklist
 
 ### Benchmark
