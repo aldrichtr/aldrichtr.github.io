@@ -1,0 +1,26 @@
+<div class="bg-stone-800">
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <nav class="flex items-center justify-between flex-wrap bg-stone-800 p-6">
+      <div class="flex items-center flex-no-shrink bg-stone-800 text-white mr-6">
+        <a href="{{ .Site.BaseURL }}"><span class="sans text-2xl tracking-tight">{{ .Site.Title }}</span></a>
+      </div>
+      <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+        <div class="text-sm lg:flex-grow"></div>
+        <div class="navmenu">
+          {{ range .Site.Menus.main }}
+            <a
+              href="{{ .URL }}"
+              class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+              {{ .Name }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<style>
+  .active {
+    display: block;
+  }
+</style>

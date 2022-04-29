@@ -1,0 +1,10 @@
+{{ if and (gt .WordCount .Site.Params.toc.wordcount ) (.Params.toc) }}
+  <aside>
+    <header>
+      <h2 class="dark:text-white text-2xl">In this post:</h2>
+    </header>
+    <div class="dark:text-white">
+      {{ .TableOfContents }}
+    </div>
+  </aside>
+{{ end }}
