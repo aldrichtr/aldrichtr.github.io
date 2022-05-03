@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .material-icons {
     font-family: "Material Icons";
     font-weight: normal;
@@ -56,4 +57,18 @@
   }
   .material-icons.md-light.md-inactive {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @layer base {
+    h2 {
+      @apply text-2xl border-l-4 border-cream-200 dark:text-steal-500 px-4 m-2;
+    }
+
+    ul {
+      @apply list-disc list-inside;
+    }
+
+    a {
+      @apply text-zinc-300 dark:text-steal-500;
+    }
   }

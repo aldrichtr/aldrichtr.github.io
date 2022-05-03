@@ -1,28 +1,26 @@
-{{ define "header_css" }} {{ end }}
+{{ define "header_css" }}{{ end }}
 
 {{ define "main" }}
-<h1> hi, I'm the list template</h1>
+  <!-- outer grid -->
+  <div class="min-h-screen bg-cream-500 dark:bg-zinc-800 flex flex-row gap-4">
+    <!-- summary list -->
+    <div class="bg-cream-500 dark:bg-zinc-800 basis-3/4 my-4 content-center">
+      {{ if .IsHome }}
+        {{ .Scratch.Set "Paginator" (.Paginate (
+            where .Site.RegularPages "Type" "in" .Site.Params.mainSections) (.Site.Params.paginator_pages) )}}
+            {{ else }}
+        <h2 class="text-4xl dark:text-cream-500 ">{{ humanize .Title }}</h2>
+        &nbsp;<hr>&nbsp;
+        {{ .Scratch.Set "Paginator" .Paginator }}
+      {{ end }}
 
-<div class="grid grid-cols-3 gap-4">
-    {{ if .Site.Params.widgets.display }}
-    <div class="col-span-3 lg:col-span-2 mb-3">
-    {{ else }}
-    <div class="col-span-3 mb-3">
-    {{ end }}
-      <h2 class="text-4xl dark:text-white">{{if not .IsHome}}{{ humanize .Title }}{{end}}</h2>
-      {{if .IsHome}}
-      {{.Scratch.Set "Paginator" (.Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) (.Site.Params.paginator_pages) )}}
-      {{else}}
-      {{.Scratch.Set "Paginator" .Paginator}}
-      {{end}}
-      {{$paginator:=(.Scratch.Get "Paginator")}}
+      {{ $paginator:=(.Scratch.Get "Paginator") }}
       {{ range $paginator.Pages }}
-      <a href="{{.RelPermalink}}">
-        {{ .Render "summary" }}
-      </a>
+        <a href="{{ .RelPermalink }}">{{ .Render "summary" }}</a>
       {{ end }}
       {{ partial "paginator.html" . }}
     </div>
+    <!-- widgets -->
     {{ if .Site.Params.widgets.display }}
       {{ partial "widgets.html" . }}
     {{ end }}

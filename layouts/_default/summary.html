@@ -1,27 +1,34 @@
-<div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    {{ if .Site.Params.post.thumbnail }}
-        {{ if .Params.image }}
-            <img alt="thumbnail" id="thumb"
-                 class="{{ .Site.Params.post.thumbnail_width }} {{ .Site.Params.post.thumbnail_height }}"
-                 src="{{ .Params.image | relURL }}" />
-        {{ else }}
+<!--
+  the summary template is a "card" of the summary of the article, and potentially the image.
+-->
 
-            {{ if .Site.Params.post.noimage }}
-                <img alt="thumbnail" id="thumb"
-                     class="{{ .Site.Params.post.thumbnail_width }} {{ .Site.Params.post.thumbnail_height }}"
-                     src='{{ "/img/default.jpg" | relURL }}'>
-            {{ end }}
-        {{ end }}
+<!-- summary card -->
+<div class="bg-cream-500 dark:bg-zinc-800 hover:-translate-y-1 hover:shadow-md duration-500 flex flex-row gap-y-10">
+  <!-- left side image -->
+  <div class="basis-1/4 shadow-xl place-content-center border-l-4 border-cream-500 my-2">
+    {{ if .Site.Params.post.thumbnail }}
+      {{ if .Params.image }}
+        {{ .Scratch.Set "tn_image" .Params.image }}
+      {{ else }}
+        {{ if .Site.Params.post.noimage }}{{ .Scratch.Set "tn_image" "/img/default.jpg" }}{{ end }}
+      {{ end }}
+      <img
+        alt="thumbnail"
+        class="object-fill rounded-r-lg w-[57] h-[32] box-border"
+        src="{{ .Scratch.Get "tn_image" | relURL }}" />
     {{ end }}
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">{{ .Title }}</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">{{ substr .Summary 0 130 | plainify | htmlUnescape }}...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            {{ if .Draft }}
-                (still in draft)
-            {{ end }}
-                <time><span class="material-icons mr-1">access_time</span>{{ .Date.Format "2006/01/02" }}</time>
-            </p>
-    </div>
+  </div>
+  <!-- right side title and summary -->
+  <div class="bg-cream-500 dark:bg-zinc-900 my-2 rounded-r-md px-4">
+    <div class="text-zinc-800 dark:text-cream-500 font-bold text-xl">{{ .Title }}</div>
+    <p class="text-base pb-5 dark:text-zinc-300">
+      {{ substr .Summary 0 130 | plainify | htmlUnescape }}...
+    </p>
+    <p class="text-sm text-zinc-600 absolute items-center hidden right-0 bottom-0 dark:text-cream-500">
+      {{ if .Draft }}
+        (still in draft)
+      {{ end }}
+      <time><span class="material-icons mr-1">access_time</span>{{ .Date.Format "2006/01/02" }}</time>
+    </p>
+  </div>
 </div>

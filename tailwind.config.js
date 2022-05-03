@@ -1,9 +1,8 @@
 module.exports = {
   content: [
     "./layouts/**/*.{html,js}",
-    "./static/**/*.{html,js}",
-    "./themes/aldrichtr/layouts/**/*.{html,js}"
-  ],
+    "./static/**/*.{html,js}"
+    ],
   presets: [],
   darkMode: 'class',
   theme: {
@@ -42,6 +41,17 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      'cream': {  // used for text on dark background
+        100: '#FFFFFF',
+        200: '#F4F9E8',
+        500: '#F1F7E2',
+        800: '#5C5E56'
+      },
+      'steal': { // used for accents and borders
+        100: '#88abb2',
+        200: '#608b94',
+        500: '#4e7178'
+      }
     }),
     columns: {
       auto: 'auto',
@@ -364,14 +374,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: [
-        '"Palatino Linotype"',
-        'ui-serif',
-        'Georgia',
-        'Cambria',
-        '"Times New Roman"',
-        'Times',
-        'serif'],
+      serif: ['"Palatino Linotype"', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         '"Ubuntu Mono"',
         'ui-monospace',

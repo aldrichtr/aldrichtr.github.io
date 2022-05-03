@@ -1,3 +1,5 @@
 {{ if .Params.image }}
-<img class="py-4" src="{{ .Params.image | absURL }}">
+<div class="place-content-center">
+    <img alt="post image" class="object-contain rounded-full place-self-center float-right" src="{{ .Params.image | absURL }}"/>
+</div>
 {{ end }}
