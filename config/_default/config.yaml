@@ -1,6 +1,7 @@
 baseURL: "https://aldrichtr.github.io/"
-languageCode: en-us
 author: Tim Aldrich
+languageCode: en-us
+copyright: "2022 Timothy Aldrich"
 enableInlineShortcodes: true
 
 title: Tim Aldrich
@@ -10,9 +11,3 @@ build:
 
 # Will give values to .Lastmod etc.
 enableGitInfo: true
-
-
-theme:
-#  actually, it's my modified version of blonde...
-#  - blonde
-  - aldrichtr
