@@ -1,7 +1,8 @@
 module.exports = {
   content: [
     "./layouts/**/*.{html,js}",
-    "./static/**/*.{html,js}"
+    "./static/**/*.{html,js}",
+    "./content/**/*.md"
     ],
   presets: [],
   darkMode: 'class',
