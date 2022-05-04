@@ -64,11 +64,26 @@
       @apply text-2xl border-l-4 border-cream-200 dark:text-steal-500 px-4 m-2;
     }
 
+    h3 {
+      @apply text-xl border-l-4 border-cream-200 dark:text-steal-600 px-4 m-2;
+    }
+
+    p {
+      @apply indent-2 my-2;
+    }
     ul {
       @apply list-disc list-inside;
     }
 
     a {
-      @apply text-zinc-300 dark:text-steal-500;
+      @apply text-zinc-300 dark:text-steal-200 dark:hover:italic hover:italic;
+    }
+
+    code {
+      @apply font-mono text-zinc-400 dark:text-cream-800;
+    }
+
+    blockquote {
+      @apply font-mono indent-4
     }
   }
