@@ -29,53 +29,53 @@ Before I get into the specifics of these two standards, I want to take a minute 
 (❗ ***Note:*** These are *my* definitions, unless explicitly stated otherwise.)
 {{<rawhtml>}} </p> {{< /rawhtml>}}
 
-**Test**
-: A measurement of a configuration item or process.
+- **Test** : A measurement of a configuration item or process.
+- **Control** : A specific action (countermeasure) taken on a configuration item or process.
+- **Profile** : A categorization of `Controls` that achieve a prescribed level of acceptance.
+- **Grouping** : A logical collection of related `Controls`
+- **Checklist** : A collection of `Controls`, logically grouped by the user, group or organization.
+- **Benchmark** : A specialization of `Checklist`, defines an established collection of controls in order to meet a "measurement milestone".
 
-**Control**
-: A specific action (countermeasure) taken on a configuration item or process.
+To make that a little more clear, I'll try to relate it to something different....
 
-**Profile**
-: A categorization of `Controls` that achieve a prescribed level of acceptance.
+{{<rawhtml>}} <div class="border-2 border-zinc-800 dark:border-cream-800 rounded-md p-2"> {{< /rawhtml>}}
 
-**Grouping**
-: A logical collection of related `Controls`
-
-**Checklist**
-: A collection of `Controls`, logically grouped by the user, group or organization.
-
-**Benchmark**
-: An established collection of controls that define a "measurement milestone"
-
-To illustrate these terms, a simple analogy...
-## A "Used Car" analogy 🚗
+### A "Used Car" analogy
 
 Let's say I want to buy a car from a used-car lot.  I want to ensure the car is going to last and is in good
 working order, but I'm far from an expert in automotive maintenance.  So, I head to the internet and search for
 "Chevrolet pre-owned car".  After a couple of clicks, I find a [172-Point Checklist][1].
 
+{{<rawhtml>}} <img alt="Tires and brakes group" src="/img/post/chevy-cpo-cl-1.png" class="float-right h-24"/> {{< /rawhtml>}}
+Ok, now that I have the `Checklist`, I can see that one of the `Groupings` is "Check Tires and Brake Pads", and
+there is a minimum tire depth `Control`.  To validate the `Control`, I would measure (that is `Test`) the tire tread
+depth of each tire, if they are >= 5/32nds they pass the `Test`, and if all four pass, then they pass the `Control`.
 
-Ok, now that I have the `Checklist`, I can see that one of the `Groupings` is "Check Tires and Brake Pads",
-![Tires and brakes group](/img/post/chevy-cpo-cl-1.png) and there is a minimum tire depth `Control`.  To validate
-the `Control`, I would measure (that is `Test`) the tire tread depth of each tire, if they are >= 5/32nds they pass
-the `Test`, and if all four pass, then they pass the `Control`.
-
-
-Notice the "Hybrid Vehicles" section at the end?
-![Hybrid vehicles group](/img/post/chevy-cpo-cl-2.png).  If the car I wanted to buy was a hybrid, then I would use
+{{<rawhtml>}} <img alt="Hybrid vehicles group" src="/img/post/chevy-cpo-cl-2.png" class="float-left h-24"/> {{< /rawhtml>}}
+Notice the "Hybrid Vehicles" section at the end?  If the car I wanted to buy was a hybrid, then I would use
 the "Hybrid Vehicles" `Profile` which would change which `Controls` applied to this car from this `Checklist`.
+
+
 
 If all of the tests pass, I can say that this meets the `Benchmark` of "Chevrolet certified pre-owned
 vehicle".
+{{<rawhtml>}} </div> {{< /rawhtml>}}
 
 ### Test
 
-In relation to Infrastructure testing, a `Test` is the atomic unit.  It is a comparison between an expected value
-and the actual value.
+In relation to Infrastructure testing, a `Test` is the atomic unit.  It is a _comparison_ between an _expected_ value
+and the _actual_ value.  In the following example:
 
-Example
-> Password history length >= 24
+``` powershell
+    (Get-ADDefaultDomainPasswordPolicy | Select-Object 'PasswordHistoryLength' -ExpandProperty 'PasswordHistoryLength') -ge 5
+```
 
+The expected value is **5**, the comparison is **greater-than or equal to (-ge)** and the actual value is what is
+returned from querying AD, and the result is a boolean value.
+
+In programming, these types of tests are also called "assertions", so in english this could be expressed like:
+
+> Assert that the Password History Length is greater-than or equal to 5
 
 ### Control
 
