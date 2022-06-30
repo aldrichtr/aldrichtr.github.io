@@ -1,21 +1,21 @@
 ---
 title: "Infrastructure Testing With Pester"
+subtitle: "Using Behavior Driven Design testing to validate your infrastructure"
+author: Tim Aldrich
 date: 2022-04-18T11:06:08-04:00
-image: img/post/pester_v5.png
+featuredImage: /img/posts/pester_v5.png
 draft: false
+toc: true
 categories:
-- Development
+  - Development
 projects:
-- infraspective
+  - infraspective
 series:
-- "infrastructure testing modules"
+  - "intro-to-infraspective"
 tags:
-- powershell
-- pester
+  - powershell
+  - pester
 ---
-
-## Infrastructure testing
-This is part 1 in a series on "Infrastructure testing modules"
 
 ## What is "Infrastructure Testing"
 
@@ -30,7 +30,7 @@ For example:
 - Is the count of members of the local 'Administrators' group 3?
 
 As a sysadmin, these are things that I would check on as part of my daily operations tasks, and also things that I
-would check on during troubleshooting.  But as infrastructure gets larger, spanning across multiple environments,
+would check on during troubleshooting.  But as infrastructure gets larger; spanning across multiple environments,
 multiple layers of virtualization and multiple vendors, versions and applications it becomes too complex and time
 consuming to do without automation.
 
@@ -45,7 +45,7 @@ Design](https://en.wikipedia.org/wiki/Behavior-driven_development#Story_versus_s
 language; mainly the use of `Describe`, `Context`, `It`, and `Should`.  These four "Domain Specific Language (DSL)"
 keywords allow you to write a test that sounds a lot like natural language.
 
-here is an example strait from the Pester documentation:
+here is an example straight from the Pester documentation:
 
 ```powershell
 BeforeAll {
@@ -79,10 +79,12 @@ One of the first modules that used Pester to test infrastructure was [Operation 
 Framework](https://github.com/PowerShell/Operation-Validation-Framework).  Although the project was abandoned about
 3 years ago, it is still available to download from github and the powershell gallery.
 
+{{< admonition type=warning title="Breaking Changes" open=true >}}
 **WARNING** OVF was based on an older version of Pester, and Pester has made some [breaking
 changes](https://pester.dev/docs/migrations/breaking-changes-in-v5) in version 5.  It probably wont work if you try
 to use it on a modern system.
 
+{{< /admonition >}}
 That said, the design of OVF was strait-forward:  Create a module structure with your tests organized into two
 folders: `Diagnostics\Simple` and `Diagnostics\Comprehensive`.  These files use the Pester default file naming
 convention, `*.Tests.ps1`.

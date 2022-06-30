@@ -1,0 +1,22 @@
+main:
+  - identifier: "posts"
+    weight: 10
+    pre: ''
+    post: ''
+    name: Blog
+    url: "/posts/"
+    title: "Blog posts"
+  - identifier: "tags"
+    weight: 20
+    pre: ''
+    post: ''
+    name: Tags
+    url: "/tags/"
+    title: "Tag list"
+  - identifier: "categories"
+    weight: 30
+    pre: ''
+    post: ''
+    name: Categories
+    url: "/categories/"
+    title: "Category list"

@@ -1,8 +1,10 @@
 ---
 title: "Why Orgmode Is the Best Markup"
-image: 'img/posts/org-mode-unicorn.svg'
+image: 'img/post/org-mode-unicorn.svg'
 date: 2022-01-04T14:53:39-05:00
 draft: true
+tags:
+  - orgmode
 ---
 
 # What is orgmode

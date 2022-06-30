@@ -1,0 +1,15 @@
+baseURL: "https://aldrichtr.github.io/"
+author: Tim Aldrich
+languageCode: en-us
+copyright: "2022 Timothy Aldrich"
+enableInlineShortcodes: true
+
+title: Tim Aldrich
+
+build:
+  writeStats: true
+
+# Will give values to .Lastmod etc.
+enableGitInfo: true
+
+theme: LoveIt
