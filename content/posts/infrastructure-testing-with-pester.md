@@ -3,19 +3,17 @@ title: "Infrastructure Testing With Pester"
 date: 2022-04-18T11:06:08-04:00
 image: img/post/pester_v5.png
 draft: false
+toc: true
 categories:
-- Development
+  - Development
 projects:
-- infraspective
+  - infraspective
 series:
-- "infrastructure testing modules"
+  - "intro-to-infraspective"
 tags:
-- powershell
-- pester
+  - powershell
+  - pester
 ---
-
-## Infrastructure testing
-This is part 1 in a series on "Infrastructure testing modules"
 
 ## What is "Infrastructure Testing"
 
@@ -45,7 +43,7 @@ Design](https://en.wikipedia.org/wiki/Behavior-driven_development#Story_versus_s
 language; mainly the use of `Describe`, `Context`, `It`, and `Should`.  These four "Domain Specific Language (DSL)"
 keywords allow you to write a test that sounds a lot like natural language.
 
-here is an example strait from the Pester documentation:
+here is an example straight from the Pester documentation:
 
 ```powershell
 BeforeAll {
