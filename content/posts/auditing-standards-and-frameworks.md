@@ -1,9 +1,11 @@
 ---
 title: "Auditing Standards and Frameworks"
 description: "Standards and Frameworks for recording and exchanging audit data"
+
 date: 2022-04-19T15:53:52-04:00
 draft: true
 toc: true
+fontawesome: true
 image: img/post/default.png
 categories:
   - Development
@@ -27,7 +29,7 @@ cybersecurity, there are several standards but (in my experience) the two major 
 Before I get into the specifics of these two standards, I want to take a minute to define some terms.
 
 {{< admonition type=note title="Note" open=true >}}
-:(fas fa-hexagon-exclamation): These are *my* definitions, unless explicitly stated otherwise.
+:(far fa-exclamation): These are *my* definitions, unless explicitly stated otherwise.
 {{< /admonition >}}
 
 - **Test** : A measurement of a configuration item or process.
