@@ -1,0 +1,15 @@
+{
+  "tabWidth": 4,
+  "useTabs": false,
+  "overrides": [
+    {
+        "files": ["*.html"],
+        "options": {
+            "parser": "go-template",
+            "bracketSameLine": true,
+            "htmlWhitespaceSensitivity": "ignore"
+        }
+    }
+  ],
+  "goTemplateBracketSpacing": true
+}
