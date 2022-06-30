@@ -11,3 +11,5 @@ build:
 
 # Will give values to .Lastmod etc.
 enableGitInfo: true
+
+theme: LoveIt

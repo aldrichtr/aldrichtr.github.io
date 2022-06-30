@@ -1,39 +1,11 @@
 favicon: "favicon.ico"
 
-paginator_pages: 5
 
-tagsLimit: 20
-
-# this tells hugo to look in these sections for items to put on the homepage list
-mainSections:
-  - post
-
-darkmode: dark
-
-toc:
-  wordcount: 200
-
-# this controls the display of widgets on the list page (including the home page)
-widgets:
-  display: true
-  widgets:
-    - search
-    #      - recent
-    #      - project
-    #      - category
-    - tags
-    - archive
-
-post:
-  thumbnail: true
-  thumbnail_height: "lg:h-32"
-  thumbnail_width: "lg:w-auto"
-  description: 120
-  noimage: false
-  # this controls the display of widgets on the post/single page
-  widgets:
-    display: true
-    widgets:
-      - post_img
-      - search
-      - toc
+# ---
+social:
+  github:
+    id: aldrichtr
+    weight: 0
+  linkedin:
+    id: timothy-r-aldrich
+    weight: 1
