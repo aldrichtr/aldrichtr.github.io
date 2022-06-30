@@ -3,6 +3,11 @@ public/
 
 # Generated css files
 resources
+
 node_modules
+
 hugo_stats.json
+
 package-lock.json
+
+.hugo_build.lock
