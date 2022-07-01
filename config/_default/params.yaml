@@ -11,7 +11,7 @@ header:
   mobileMode: "auto"
   title:
     logo: ""
-    name: "Tim Aldrich"
+    name: "Get-RandomIdea | Set-Content \"~/blog\""
     pre: ""
     post: ""
     typeit: false
@@ -36,7 +36,7 @@ list:
   rss: 10
 
 app:
-  title: "My personal blog"
+  title: "Get-RandomIdea | Set-Content \"~/blog\""
 # ---
 social:
   github:
