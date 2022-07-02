@@ -5,18 +5,25 @@ main:
     post: ''
     name: Blog
     url: "/posts/"
-    title: "Blog posts"
+    title: "Posts"
   - identifier: "tags"
     weight: 20
     pre: ''
     post: ''
     name: Tags
     url: "/tags/"
-    title: "Tag list"
+    title: "Tags"
   - identifier: "categories"
     weight: 30
     pre: ''
     post: ''
     name: Categories
     url: "/categories/"
-    title: "Category list"
+    title: "Categories"
+  - identifier: About
+    weight: 90
+    pre: ''
+    post: ''
+    name: About
+    url: "/about/"
+    title: "AboutPages"
