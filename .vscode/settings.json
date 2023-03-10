@@ -3,7 +3,11 @@
         "editor.unicodeHighlight.ambiguousCharacters": true,
         "editor.unicodeHighlight.invisibleCharacters": true,
         "editor.wordWrap": "on",
-        "editor.quickSuggestions": true,
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
         "cSpell.fixSpellingWithRenameProvider": true,
         "cSpell.advanced.feature.useReferenceProviderWithRename": true,
         "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/"
