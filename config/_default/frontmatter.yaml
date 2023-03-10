@@ -1,0 +1,16 @@
+date:
+- date
+- publishDate
+- lastmod
+expiryDate:
+- expiryDate
+lastmod:
+  #! we prefer the lastmod explicitly set in the file if it is present
+  #! which gives us the ability to override the "actual" last mod if needed
+- lastmod
+- :git
+- date
+- publishDate
+publishDate:
+- publishDate
+- date

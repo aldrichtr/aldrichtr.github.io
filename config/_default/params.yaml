@@ -48,7 +48,7 @@ social:
 
 
 search:
-  enable: false
+  enable: true
   type: "lunr"
   contentLength: 4000
   placeholder: ""

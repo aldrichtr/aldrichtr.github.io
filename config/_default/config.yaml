@@ -7,6 +7,12 @@ languageCode: en-us
 copyright: "2022 Timothy Aldrich"
 enableInlineShortcodes: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 title: Tim Aldrich
 
 build:
