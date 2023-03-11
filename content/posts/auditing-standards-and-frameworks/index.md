@@ -3,12 +3,12 @@ title: "Auditing Standards and Frameworks"
 description: "Standards and Frameworks for recording and exchanging audit data"
 
 date: 2022-04-19T15:53:52-04:00
-draft: true
+draft: false
 toc: true
 fontawesome: true
-image: img/post/default.png
+featuredImage: featured.png
 categories:
-  - Development
+  - IaC
 projects:
   - infraspective
 series:

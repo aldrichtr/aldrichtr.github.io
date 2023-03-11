@@ -1,7 +1,7 @@
 ---
 title: "Hugo Site Elements"
 description: "Organizing hugo site content with sections, types and taxonomy terms"
-image: "img/post/default.png"
+featuredImage: "featured.png"
 date: 2022-04-18T11:36:30-04:00
 draft: true
 categories:

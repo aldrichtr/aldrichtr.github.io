@@ -1,21 +1,50 @@
 ---
+draft: true
+date: 2022-04-18T16:58:16-05:00
+
+# ---------------------------------------------
+#region Heading
 title: "Infrastructure Testing With Pester"
 subtitle: "Using Behavior Driven Design testing to validate your infrastructure"
-author: Tim Aldrich
-date: 2022-04-18T11:06:08-04:00
-featuredImage: /img/posts/pester_v5.png
-draft: false
-toc: true
+description: "A walkthrough of using Pester to test your infrastructure"
+author: "Tim Aldrich"
+
+#endregion Heading
+# ---------------------------------------------
+# #region image
+featuredImage: pester_v5.png
+featuredImagePreview: featured-preview.png
+
+# #endregion image
+# ---------------------------------------------
+
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+# metadata
 categories:
-  - Development
-projects:
-  - infraspective
-series:
-  - "intro-to-infraspective"
+  - IaC
 tags:
   - powershell
   - pester
+series:
+  - "intro-to-infraspective"
+keywords: []
+
+
+# ---------------------------------------------
+# LoveIt theme features
+
+twemoji: true
+ruby: true
+fraction: true
+fontawesome: true
+mapbox: false
+
 ---
+
+Use PowerShell's de facto standard unit testing module to validate your infrastructure is deployed and configured to
+your specifications.
 
 ## What is "Infrastructure Testing"
 

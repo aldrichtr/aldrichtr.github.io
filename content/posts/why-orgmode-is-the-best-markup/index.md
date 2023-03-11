@@ -1,8 +1,12 @@
 ---
-title: "Why Orgmode Is the Best Markup"
-image: 'img/post/org-mode-unicorn.svg'
-date: 2022-01-04T14:53:39-05:00
 draft: true
+date: 2022-01-04T14:53:39-05:00
+
+
+title: "Why Orgmode Is the Best Markup"
+subtitle: "A markup language with rich metadata"
+featuredImage: 'org-mode-unicorn.png'
+categories: []
 tags:
   - orgmode
 ---
