@@ -2,7 +2,8 @@ favicon: "favicon.ico"
 
 defaultTheme: "dark"
 
-gitRepo: "https://github.com/aldrichtr/aldrichtr.github.io"
+# in LoveIt theme, adding the repo here puts a link to the commit, I'm not ready for that yet
+#gitRepo: "https://github.com/aldrichtr/aldrichtr.github.io"
 
 dateFormat: "2006 Jan 02"
 
