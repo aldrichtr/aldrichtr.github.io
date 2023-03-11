@@ -4,9 +4,9 @@ description: "Infrastructure testing tools and systems"
 date: 2022-04-22T13:57:43-04:00
 draft: true
 toc: true
-image: "img/post/default.png"
+featuredImage: featured.png
 categories:
-  - Development
+  - IaC
 projects:
   - infraspective
 series:

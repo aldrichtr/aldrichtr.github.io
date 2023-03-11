@@ -1,8 +1,17 @@
 baseURL: "https://aldrichtr.github.io/"
-author: Tim Aldrich
+author:
+  name: Tim Aldrich
+  email: timothy.r.aldrich@gmail.com
+
 languageCode: en-us
 copyright: "2022 Timothy Aldrich"
 enableInlineShortcodes: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 title: Tim Aldrich
 
