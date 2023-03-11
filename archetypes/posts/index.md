@@ -3,16 +3,24 @@ draft: true
 date: {{ .Date }}
 
 # ---------------------------------------------
+#region Heading
 title: "{{ replace .Name "-" " " | title }}"
-author: "{{ .Site.Author.name }}"
 subtitle: "Add a subtitle"
 description: "Add a description"
+author: "{{ .Site.Author.name }}"
 
+#endregion Heading
 # ---------------------------------------------
-featuredImage: /img/posts/default.png
-featuredImagePreview: /img/posts/default.png
+# #region image
+featuredImage: featured.png
+featuredImagePreview: featured-preview.png
 
+# #endregion image
 # ---------------------------------------------
+
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
 # metadata
 categories: []
 tags: []
