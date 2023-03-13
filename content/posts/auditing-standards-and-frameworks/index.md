@@ -1,14 +1,15 @@
 ---
-title: "Auditing Standards and Frameworks"
-description: "Standards and Frameworks for recording and exchanging audit data"
-
-date: 2022-04-19T15:53:52-04:00
 draft: false
-toc: true
-fontawesome: true
+date: 2022-04-19T15:53:52-04:00
+
+title: "Auditing Standards and Frameworks"
+slug: 'auditing-standards-and-frameworks'
+subtitle: "Standards and Frameworks for recording and exchanging audit data"
+
 featuredImage: featured.png
+
 categories:
-  - IaC
+  - InfrastructureTesting
 projects:
   - infraspective
 series:
@@ -41,7 +42,6 @@ Before I get into the specifics of these two standards, I want to take a minute 
 
 To make that a little more clear, I'll try to relate it to something different....
 
-
 {{< admonition type=tip title="A Used Car analogy" open=true >}}
 ![Car lot](pre-owned-vehicles.jpg)
 Let's say I want to buy a car from a used-car lot.  I want to ensure the car is going to last and is in good
@@ -50,19 +50,16 @@ working order, but I'm far from an expert in automotive maintenance.  So, I head
 
 ![checklist](checklist.png)
 
-
 Ok, now that I have the `Checklist`, I can see that one of the `Groupings` is "Check Tires and Brake Pads", there
 is a minimum tire depth `Control`.  To validate the `Control`, I would measure (that is `Test`) the tire tread depth
 of each tire, if they are >= 5/32nds they pass the `Test`, and if all four pass, then they pass the `Control`.
 
 ![Tires and brakes group](chevy-cpo-cl-1.png)
 
-
 Notice the "Hybrid Vehicles" section at the end?  If the car I wanted to buy was a hybrid, then I would use
 the "Hybrid Vehicles" `Profile` which would change which `Controls` applied to this car from this `Checklist`.
 
 ![Hybrid vehicles group](chevy-cpo-cl-2.png)
-
 
 The process continues through each of the `Groupings` until I complete the `Checklist`.  If all of the tests pass, I
 can say that this meets the `Benchmark` of "Chevrolet certified pre-owned vehicle".
@@ -71,11 +68,11 @@ can say that this meets the `Benchmark` of "Chevrolet certified pre-owned vehicl
 
 ### Test
 
-In relation to Infrastructure testing, a `Test` is the atomic unit.  It is a _comparison_ between an _expected_ value
-and the _actual_ value.  In the following example:
+In relation to Infrastructure testing, a `Test` is the atomic unit.  It is a *comparison* between an *expected* value
+and the *actual* value.  In the following example:
 
-``` powershell
-(Get-ADDefaultDomainPasswordPolicy | Select-Object 'PasswordHistoryLength' -ExpandProperty 'PasswordHistoryLength') -ge 5
+```powershell
+(Get-ADDefaultDomainPasswordPolicy | Select-Object -ExpandProperty 'PasswordHistoryLength') -ge 5
 ```
 
 The expected value is **5**, the comparison is **greater-than or equal to (-ge)** and the actual value is what is
@@ -84,7 +81,6 @@ returned from querying AD, and the result is a boolean value.
 In programming, these types of tests are also called "assertions", so in english this could be expressed like:
 
 > Assert that the Password History Length is greater-than or equal to 5
-
 
 ### Control
 
@@ -97,14 +93,11 @@ Example
 > Function: Protect
 > Description: "Use unique passwords for all enterprise assets. Best practice ..."
 
-
-
 ### Grouping
 
 A logical collection of related `Controls` to aid in categorizing and organization.
 
 ### Profile
-
 
 Example
 > Id: L1
@@ -114,7 +107,6 @@ Example
 ### Checklist
 
 ### Benchmark
-
 
 > Id: 1.1.1
 >

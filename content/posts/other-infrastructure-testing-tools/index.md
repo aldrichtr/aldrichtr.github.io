@@ -1,12 +1,15 @@
 ---
-title: "Other Infrastructure Testing Tools"
-description: "Infrastructure testing tools and systems"
-date: 2022-04-22T13:57:43-04:00
 draft: true
-toc: true
+date: 2022-04-22T13:57:43-04:00
+
+title: "Other Infrastructure Testing Tools"
+slug: "other-infrastructure-testing-tools"
+subtitle: "Infrastructure testing tools and systems"
+
 featuredImage: featured.png
+
 categories:
-  - IaC
+  - InfrastructureTesting
 projects:
   - infraspective
 series:
@@ -17,7 +20,7 @@ series:
 
 Like most things in IT, there are many tools and system that have overlapping features.
 In the area of "infrastructure automation", there are tools that are designed to carry
-out a series of functions on a list of targets.  Some noteable tools in this area are
+out a series of functions on a list of targets.  Some notable tools in this area are
 Ansible, Chef, and Puppet.
 
 These tools ***can*** do Infrastructure Testing, but it's not their main purpose.  I

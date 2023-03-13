@@ -1,13 +1,19 @@
 ---
-title: '"Hello World" | Set-Content blog'
-subtitle: My first post.  Validating all the components are working.
-featuredImage: hello-world-post-icon.png
-date: 2022-02-22
 draft: false
+date: 2022-02-22
+
+title: '"Hello World" | Set-Content blog'
+slug: 'my-first-post'
+subtitle: My first post.  Validating all the components are working.
+
+featuredImage: hello-world-post-icon.png
+
+categories: []
 tags:
   - hello
   - hugo
 archives:
+  - 2022
   - 2022/02
 ---
 

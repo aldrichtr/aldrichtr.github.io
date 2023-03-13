@@ -5,21 +5,14 @@ lastmod: 2022-07-01T16:53:52-04:00
 
 # ---------------------------------------------
 title: "Markdown Is Everywhere"
+slug: 'markdown-is-everywhere'
 subtitle: "The ubiquitous markup language"
-author: "Tim Aldrich"
+
 
 categories: []
 
 tags: []
 
-# ---------------------------------------------
-# enable features
-twemoji: true
-ruby: true
-fraction: true
-fontawesome: true
-
-mapbox: false
 
 ---
 
