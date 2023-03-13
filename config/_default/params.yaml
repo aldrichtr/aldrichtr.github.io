@@ -85,7 +85,7 @@ page:
   ruby: true
   fraction: true
   fontawesome: true
-  linkToMarkdown: true
+  linkToMarkdown: false
   rssFullText: false
   toc:
     enable: true
@@ -119,15 +119,15 @@ page:
     Pinterest: false
     Tumblr: false
     HackerNews: true
-    Reddit: false
+    Reddit: true
     VK: false
     Buffer: false
     Xing: false
     Line: true
     Instapaper: false
-    Pocket: false
+    Pocket: true
     Flipboard: false
-    Weibo: true
+    Weibo: false
     Blogger: false
     Baidu: false
     Odnoklassniki: false

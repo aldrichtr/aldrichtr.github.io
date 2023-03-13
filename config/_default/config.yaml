@@ -5,6 +5,7 @@ author:
 
 languageCode: en-us
 copyright: "2022 Timothy Aldrich"
+
 enableInlineShortcodes: true
 
 outputs:
@@ -22,3 +23,9 @@ build:
 enableGitInfo: true
 
 theme: LoveIt
+
+resources:
+  - name: featured-image
+    src: featured.png
+  - name: featured-image-preview
+    src: featured-preview.png
