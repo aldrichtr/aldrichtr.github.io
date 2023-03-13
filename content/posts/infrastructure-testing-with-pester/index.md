@@ -2,44 +2,21 @@
 draft: false
 date: 2022-04-18T16:58:16-05:00
 
-# ---------------------------------------------
-#region Heading
 title: "Infrastructure Testing With Pester"
+slug: "infrastructure-testing-with-pester"
 subtitle: "Using Behavior Driven Design testing to validate your infrastructure"
 description: "A walkthrough of using Pester to test your infrastructure"
-author: "Tim Aldrich"
 
-#endregion Heading
-# ---------------------------------------------
-# #region image
 featuredImage: pester_v5.png
-featuredImagePreview: featured-preview.png
 
-# #endregion image
-# ---------------------------------------------
-
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-# metadata
 categories:
-  - IaC
+  - InfrastructureTesting
 tags:
   - powershell
   - pester
 series:
   - "intro-to-infraspective"
 keywords: []
-
-
-# ---------------------------------------------
-# LoveIt theme features
-
-twemoji: true
-ruby: true
-fraction: true
-fontawesome: true
-mapbox: false
 
 ---
 

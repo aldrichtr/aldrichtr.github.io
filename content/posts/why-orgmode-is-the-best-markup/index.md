@@ -4,6 +4,7 @@ date: 2022-01-04T14:53:39-05:00
 
 
 title: "Why Orgmode Is the Best Markup"
+slug: "why-orgmode-is-the-best-markup"
 subtitle: "A markup language with rich metadata"
 featuredImage: 'org-mode-unicorn.png'
 categories: []
@@ -11,14 +12,14 @@ tags:
   - orgmode
 ---
 
-# What is orgmode
+## What is orgmode
 
 If you are an emacs user, then you probably already know about
 [orgmode](https://orgmode.org).  But, if you haven't heard of it before then
 here's a bit about the markup language:
 
 At it's core, orgmode is based on a document outline.  A document is divided
-into a hierachcial structure using 'headings'.  A heading starts with one or
+into a hierarchical structure using 'headings'.  A heading starts with one or
 more '*' characters, like this
 
 ```
